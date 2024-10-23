@@ -7,7 +7,7 @@ app = FastAPI()
 # Permitir peticiones desde cualquier origen
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Permite solo tu frontend React
+    allow_origins=["*"],  # Permite solo tu frontend React
     allow_credentials=True,
     allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
     allow_headers=["*"],  # Permite todos los encabezados
