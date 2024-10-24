@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import requests
-
+# uvicorn main:app --reload
 app = FastAPI()
 
 # Permitir peticiones desde cualquier origen
